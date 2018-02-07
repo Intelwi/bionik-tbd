@@ -2,6 +2,36 @@
 
 Projekt eksperymentalny/wewnętrzny. Korzystaj na własną odpowiedzialność.
 
+## Wymagania
+* CMake >= 3.9
+* Boost >= 1.66
+* OpenCV >= 3.4
+* FFmpeg >= 3.4
+
+## Uruchamianie
+```bash
+# Pobieranie
+
+git clone https://github.com/protecto/bionik-tbd.git
+cd bionik-tbd
+
+
+# Kompilacja
+
+mkdir build
+cmake ..
+make
+
+
+# Uruchamianie
+
+# Podgląd
+ffplay -v info -f mjpeg -i 'udp://127.0.0.1:5001?listen'
+
+# Główny program
+./robot
+```
+
 ## Konfiguracja systemu
 
 ### Arch Linux ARM: Raspberry Pi
